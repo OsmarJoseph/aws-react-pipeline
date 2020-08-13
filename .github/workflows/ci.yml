@@ -32,7 +32,6 @@ jobs:
 
     - name: Check commit message
       uses: wagoid/commitlint-github-action@v2
-      failOnWarnings: true
 
     # - name: Coveralls
     #   uses: coverallsapp/github-action@master
