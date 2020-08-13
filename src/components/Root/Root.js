@@ -1,17 +1,17 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import Counter from "./Counter";
+import Counter from './Counter'
 
 const CounterWrapper = styled.div`
   margin: auto;
-`;
+`
 
 const Wrapper = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-`;
+`
 
 const Root = () => {
   return (
@@ -20,7 +20,7 @@ const Root = () => {
         <Counter />
       </CounterWrapper>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Root;
+export default Root

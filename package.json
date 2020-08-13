@@ -8,13 +8,21 @@
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.3.2",
     "babel-jest": "24.9.0",
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
     "jest": "24.9.0",
     "parcel-bundler": "1.12.4"
   },
   "scripts": {
     "build": "rm -rf dist && parcel build src/index.html",
+    "start": "parcel src/index.html",
     "test": "jest",
-    "start": "parcel src/index.html"
+    "lint": "eslint src --ext js,jsx"
   },
   "dependencies": {
     "react": ">= 16.3.0",
