@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Set up Node
       uses: actions/setup-node@v1
@@ -28,8 +30,8 @@ jobs:
     - name: Check linting
       run: yarn lint
 
-    # - name: Check commit message
-    #   uses: wagoid/commitlint-github-action@v1
+    - name: Check commit message
+      uses: wagoid/commitlint-github-action@v1
 
     # - name: Coveralls
     #   uses: coverallsapp/github-action@master
