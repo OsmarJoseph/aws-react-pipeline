@@ -1,8 +1,8 @@
-import React from "react";
-import { render } from "react-dom";
-import { createGlobalStyle } from "styled-components";
+import React from 'react'
+import { render } from 'react-dom'
+import { createGlobalStyle } from 'styled-components'
 
-import Root from "./components/Root";
+import Root from './components/Root'
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -20,12 +20,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: Montserrat, sans-serif;
   }
-`;
+`
 
 render(
   <>
     <GlobalStyle />
     <Root />
   </>,
-  document.getElementById("app")
-);
+  document.getElementById('app')
+)

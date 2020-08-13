@@ -1,5 +1,5 @@
-import React, { useReducer } from "react";
-import styled from "styled-components";
+import React, { useReducer } from 'react'
+import styled from 'styled-components'
 
 const Button = styled.button`
   appearance: none;
@@ -18,26 +18,26 @@ const Button = styled.button`
     background-color: #333333;
     cursor: pointer;
   }
-`;
+`
 
 const ButtonRow = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-`;
+`
 
 const CounterValue = styled.strong`
   display: block;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 0.375em;
-`;
+`
 
 const Counter = () => {
   const [counter, dispatch] = useReducer(
     (counter, addAmount) => counter + addAmount,
     0
-  );
+  )
 
   return (
     <div>
@@ -49,7 +49,7 @@ const Counter = () => {
         <Button onClick={() => dispatch(2)}>+2</Button>
       </ButtonRow>
     </div>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter
