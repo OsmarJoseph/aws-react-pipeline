@@ -30,7 +30,7 @@ jobs:
     - name: Check linting
       run: yarn lint
 
-    - name: Check commit message
+    - name: Check commit message 
       uses: wagoid/commitlint-github-action@v2
 
     # - name: Coveralls
