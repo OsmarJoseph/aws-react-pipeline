@@ -7,9 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # env:
-    #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -25,7 +22,7 @@ jobs:
       run: yarn
 
     - name: Check tests
-      run: yarn test --coverage
+      run: yarn test
 
     - name: Check linting
       run: yarn lint
