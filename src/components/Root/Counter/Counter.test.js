@@ -12,7 +12,7 @@ test('Counter component works properly', () => {
   const plusOneButtonEl = getByText('+1', { selector: 'button' })
   const plusTwoButtonEl = getByText('+2', { selector: 'button' })
 
-  expect(counterValueEl).toHaveTextContent('0')
+  expect(counterValueEl).toHaveTextContent('1')
 
   fireEvent.click(minusOneButtonEl)
 
